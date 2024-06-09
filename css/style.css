@@ -515,7 +515,7 @@ h1, .h1 {
   .about__image {
     border-radius: 6px;
     margin-top: 0;
-    width: 50%;
+    min-width: 50%;
   }
 }
 
