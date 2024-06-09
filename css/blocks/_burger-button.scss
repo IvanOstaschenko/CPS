@@ -1,0 +1,21 @@
+.burger-button{
+  position: relative;
+
+  @include mobile-above{
+    margin-right: 20px;
+  }
+
+  &:after{
+    @include mobile-above{
+      background-color: var(--color-gray-light);
+      content:'';
+      display: block;
+      height: 32px;
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      translate: -50% -50%;
+      width: 2px;
+    }
+  }
+}
