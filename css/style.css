@@ -254,23 +254,23 @@ h1, .h1 {
 }
 .primary-button--icon--phone:after {
   content: "";
-  background-image: url("/images/phone-icon.svg");
+  background-image: url("../images/phone-icon.svg");
 }
 .primary-button--icon--message:after {
   content: "";
-  background-image: url("/images/message-icon.svg");
+  background-image: url("../images/message-icon.svg");
 }
 .primary-button--icon--user:after {
   content: "";
-  background-image: url("/images/user-icon.svg");
+  background-image: url("../images/user-icon.svg");
 }
 .primary-button--icon--instrument:after {
   content: "";
-  background-image: url("/images/insrument_button.svg");
+  background-image: url("../images/insrument_button.svg");
 }
 .primary-button--icon--search:after {
   content: "";
-  background-image: url("/images/search_button.svg");
+  background-image: url("../images/search_button.svg");
 }
 @media (hover: hover) {
   .primary-button:hover:after {
@@ -337,7 +337,7 @@ h1, .h1 {
   aspect-ratio: 1;
   width: 40px;
   content: "";
-  background-image: url("/images/burger_button.svg");
+  background-image: url("../images/burger_button.svg");
 }
 @media (min-width: 768px) {
   .burger-button:before {

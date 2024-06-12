@@ -29,31 +29,31 @@
     &--phone{
       &:after{
         content: '';
-        background-image: url("/images/phone-icon.svg");
+        background-image: url("../images/phone-icon.svg");
       }
     }
     &--message{
       &:after{
         content: '';
-        background-image: url("/images/message-icon.svg");
+        background-image: url("../images/message-icon.svg");
       }
     }
     &--user{
       &:after{
         content: '';
-        background-image: url("/images/user-icon.svg");
+        background-image: url("../images/user-icon.svg");
       }
     }
     &--instrument{
       &:after{
         content: '';
-        background-image: url("/images/insrument_button.svg");
+        background-image: url("../images/insrument_button.svg");
       }
     }
     &--search{
       &:after{
         content: '';
-        background-image: url("/images/search_button.svg");
+        background-image: url("../images/search_button.svg");
       }
     }
   }
