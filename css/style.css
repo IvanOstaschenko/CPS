@@ -228,6 +228,7 @@ h1, .h1 {
 }
 
 .primary-button {
+  cursor: pointer;
   background: transparent;
   border: none;
   font-size: 0;
@@ -242,14 +243,45 @@ h1, .h1 {
   justify-content: center;
   aspect-ratio: 1;
 }
+.primary-button:after {
+  background-color: var(--color-pink);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  display: inline-block;
+  aspect-ratio: 1;
+  width: 40px;
+}
+.primary-button--icon--phone:after {
+  content: "";
+  background-image: url("/images/phone-icon.svg");
+}
+.primary-button--icon--message:after {
+  content: "";
+  background-image: url("/images/message-icon.svg");
+}
+.primary-button--icon--user:after {
+  content: "";
+  background-image: url("/images/user-icon.svg");
+}
+.primary-button--icon--instrument:after {
+  content: "";
+  background-image: url("/images/insrument_button.svg");
+}
+.primary-button--icon--search:after {
+  content: "";
+  background-image: url("/images/search_button.svg");
+}
 @media (hover: hover) {
-  .primary-button:hover .primary-button__icon-wrapper {
+  .primary-button:hover:after {
     box-shadow: 0 0 5px 0;
+    border: 3px solid;
   }
 }
 @media (hover: none) {
-  .primary-button:active .primary-button__icon-wrapper {
+  .primary-button:active:after {
     box-shadow: 0 0 5px 0;
+    border: 3px solid;
   }
 }
 
@@ -296,8 +328,19 @@ h1, .h1 {
     margin-right: 20px;
   }
 }
+.burger-button:after {
+  background-color: var(--color-pink);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  display: inline-block;
+  aspect-ratio: 1;
+  width: 40px;
+  content: "";
+  background-image: url("/images/burger_button.svg");
+}
 @media (min-width: 768px) {
-  .burger-button:after {
+  .burger-button:before {
     background-color: var(--color-gray-light);
     content: "";
     display: block;

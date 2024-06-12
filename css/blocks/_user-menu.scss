@@ -5,6 +5,9 @@
   @include mobile-above{
     display: flex;
   }
+  &__item{
+
+  }
 
   &__text{
     font-size: 0;

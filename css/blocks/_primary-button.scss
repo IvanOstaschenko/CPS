@@ -1,4 +1,5 @@
 .primary-button{
+  cursor: pointer;
   background: transparent;
   border: none;
   font-size: 0;
@@ -14,11 +15,53 @@
     aspect-ratio: 1;
   }
 
-  @include hover{
-    .primary-button__icon-wrapper{
-      box-shadow: 0 0 5px 0;
-    }
-
+  &:after{
+    background-color: var(--color-pink);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    display: inline-block;
+    aspect-ratio: 1;
+    width: 40px;
   }
 
+  &--icon{
+    &--phone{
+      &:after{
+        content: '';
+        background-image: url("/images/phone-icon.svg");
+      }
+    }
+    &--message{
+      &:after{
+        content: '';
+        background-image: url("/images/message-icon.svg");
+      }
+    }
+    &--user{
+      &:after{
+        content: '';
+        background-image: url("/images/user-icon.svg");
+      }
+    }
+    &--instrument{
+      &:after{
+        content: '';
+        background-image: url("/images/insrument_button.svg");
+      }
+    }
+    &--search{
+      &:after{
+        content: '';
+        background-image: url("/images/search_button.svg");
+      }
+    }
+  }
+
+  @include hover{
+    &:after{
+      box-shadow: 0 0 5px 0;
+      border: 3px solid;
+    }
+  }
 }

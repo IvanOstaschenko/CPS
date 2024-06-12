@@ -15,14 +15,6 @@
             type="button"
             class="primary-button burger-button"
         >
-            <span class="primary-button__icon-wrapper">
-                <img
-                    class="primary-button__icon"
-                    src="images/burger_button.svg"
-                    alt=""
-                    width="18" height="16" loading="lazy"
-                >
-            </span>
         </button>
         <a href="/" class="header__logo logo">
             <img
@@ -32,123 +24,55 @@
                 width="" height="" loading="lazy"
             />
         </a>
-        <ul class="header__user-menu user-menu">
-            <li class="user-menu__item">
-                <a class="user-menu__link primary-button" href="tel:111111111">
-                    <span class="user-menu__text">Позвонить по телефону</span>
-                    <span class="primary-button__icon-wrapper">
-                    <img
-                        class="user-menu__image"
-                        src="images/phone-icon.svg"
-                        alt=""
-                        width="18" height="18" loading="lazy"
-                    >
-                    </span>
-                </a>
-            </li>
-            <li class="user-menu__item">
-                <a class="user-menu__link primary-button" href="mailto:test@test.test">
+        <div class="header__user-menu user-menu">
+            <a class="user-menu__link primary-button primary-button--icon--phone" href="tel:111111111">
+                <span class="user-menu__text">Позвонить по телефону</span>
+            </a>
+            <a class="user-menu__link primary-button primary-button--icon--message" href="mailto:test@test.test">
                     <span class="user-menu__text">
                     написать электронное письмо
                     </span>
-                    <span class="primary-button__icon-wrapper">
-                    <img
-                        class="user-menu__image"
-                        src="images/message-icon.svg"
-                        alt=""
-                        width="20" height="20" loading="lazy"
-                    >
-                    </span>
-                </a>
-            </li>
-            <li class="user-menu__item">
-
-                <a class="user-menu__link primary-button" href="#">
+            </a>
+            <a class="user-menu__link primary-button primary-button--icon--user" href="#">
                     <span class="user-menu__text">
                     перейти к профилю пользователя
                     </span>
-                    <span class="primary-button__icon-wrapper">
-                    <img
-                        class="user-menu__image"
-                        src="images/user-icon.svg"
-                        alt=""
-                        width="20" height="18" loading="lazy"
-                    >
-                    </span>
-                </a>
-            </li>
-        </ul>
-        <ul class="services-menu header__services-menu">
-            <li class="services-menu__item">
-                <button
-                    class="primary-button"
-                    type="button"
-                >
-                    <span class="primary-button__icon-wrapper">
-                    <img
-                        class="primary-button__icon"
-                        src="images/insrument_button.svg"
-                        alt=""
-                        width="20" height="20" loading="lazy"
-                    >
-                    </span>
-                </button>
-            </li>
-            <li class="services-menu__item">
-                <button
-                    class="primary-button"
-                    type="button"
-                >
-                    <span class="primary-button__icon-wrapper">
-                    <img
-                        class="primary-button__icon"
-                        src="images/search_button.svg"
-                        alt=""
-                        width="16" height="20" loading="lazy"
-                    >
-                    </span>
-                </button>
-            </li>
-        </ul>
+            </a>
+        </div>
+        <div class="services-menu header__services-menu">
+            <button
+                class="primary-button primary-button--icon--instrument"
+                type="button"
+            >
+                <span class="services-menu__text visually-hidden">Оставить заявку</span>
+            </button>
+            <button
+                class="primary-button primary-button--icon--search"
+                type="button"
+            >
+                <span class="services-menu__text visually-hidden">Статус ремонта</span>
+            </button>
+        </div>
     </div>
 </header>
 <main class="content">
     <header class="content__header">
         <h1 class="content__title h1">Услуги и сервисы</h1>
-        <ul class="services-menu content__services-menu">
-            <li class="services-menu__item">
-                <button
-                    class="primary-button services-menu__primary-button"
-                    type="button"
-                >
-                    <span class="services-menu__text">Статус ремонта</span>
-                    <span class="primary-button__icon-wrapper">
-                    <img
-                        class="primary-button__icon"
-                        src="images/insrument_button.svg"
-                        alt=""
-                        width="20" height="20" loading="lazy"
-                    >
-                    </span>
-                </button>
-            </li>
-            <li class="services-menu__item">
-                <button
-                    class="primary-button services-menu__primary-button"
-                    type="button"
-                >
-                    <span class="services-menu__text">Статус ремонта</span>
-                    <span class="primary-button__icon-wrapper">
-                    <img
-                        class="primary-button__icon"
-                        src="images/search_button.svg"
-                        alt=""
-                        width="16" height="20" loading="lazy"
-                    >
-                    </span>
-                </button>
-            </li>
-        </ul>
+        <div class="services-menu content__services-menu">
+            <button
+                class="primary-button services-menu__primary-button primary-button--icon--instrument"
+                type="button"
+            >
+                <span class="services-menu__text">Оставить заявку</span>
+            </button>
+
+            <button
+                class="primary-button services-menu__primary-button primary-button--icon--search"
+                type="button"
+            >
+                <span class="services-menu__text">Статус ремонта</span>
+            </button>
+        </div>
     </header>
     <nav class="content__menu menu">
         <ul class="menu__list">
