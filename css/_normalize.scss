@@ -148,3 +148,10 @@ svg * {
     scroll-behavior: auto !important;
   }
 }
+
+/*
+   убираем синий квадрат при клике на мобильном устройстве по ссылкам и кнопкам
+*/
+*{
+  -webkit-tap-highlight-color: transparent;
+}

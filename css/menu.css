@@ -150,6 +150,13 @@ svg * {
     scroll-behavior: auto !important;
   }
 }
+/*
+   убираем синий квадрат при клике на мобильном устройстве по ссылкам и кнопкам
+*/
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 @font-face {
   font-family: "TT Lakes";
   src: url("../fonts/TTLakes-Regular.woff2") format("woff2");
@@ -180,6 +187,9 @@ svg * {
   --color-gray-light: #eaeaea;
   --color-gray-links: #7e7e82;
   --font-family: "TT Lakes", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 700;
+  --font-weight-bold: 900;
   --h1-font-size: 28px;
   --border: 2px solid var(--color-aqua-light);
   --primary-button-height: 40px;
@@ -206,6 +216,8 @@ body {
   background-color: var(--color-bg-gray);
 }
 
+::before,
+::after,
 a,
 button,
 textarea,
@@ -319,24 +331,26 @@ h1, .h1 {
 }
 @media (hover: hover) {
   .primary-button:hover:after {
-    box-shadow: 0 0 5px 0;
-    border: 3px solid;
+    opacity: 0.5;
   }
 }
 @media (hover: none) {
   .primary-button:active:after {
-    box-shadow: 0 0 5px 0;
-    border: 3px solid;
+    opacity: 0.5;
   }
 }
 
 .sidebar-menu {
   background: #fff;
+  min-height: 100vh;
   width: 320px;
   position: absolute;
   left: 0;
   top: 0;
   box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+}
+.sidebar-menu__sidebar-navigation {
+  margin-top: 24px;
 }
 
 .sidebar-header {
@@ -351,6 +365,32 @@ h1, .h1 {
 }
 .sidebar-header__last-button {
   margin-left: auto;
+}
+
+.sidebar-navigation__item:not(:first-child) {
+  margin-top: 20px;
+}
+.sidebar-navigation__link {
+  border: 4px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: var(--font-weight-medium);
+  padding-left: 20px;
+  padding-block: 5px;
+}
+.sidebar-navigation__link--active {
+  border-left-color: var(--color-aqua);
+  color: var(--color-gray-links);
+}
+@media (hover: hover) {
+  .sidebar-navigation__link:hover {
+    color: var(--color-gray-links);
+  }
+}
+@media (hover: none) {
+  .sidebar-navigation__link:active {
+    color: var(--color-gray-links);
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */

@@ -4,7 +4,8 @@ body{
   color: var(--color-text);
   background-color: var(--color-bg-gray);
 }
-
+::before,
+::after,
 a,
 button,
 textarea,

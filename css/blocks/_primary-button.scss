@@ -73,8 +73,7 @@
 
   @include hover{
     &:after{
-      box-shadow: 0 0 5px 0;
-      border: 3px solid;
+      opacity: .5;
     }
   }
 }
