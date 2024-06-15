@@ -10,13 +10,13 @@
 </head>
 <body>
 <aside class="sidebar-menu">
-    <header class="sidebar__header header">
-        <div class="header__inner">
+    <header class="sidebar-menu__sidebar-header sidebar-header">
+        <div class="sidebar-header__inner">
             <button
                 type="button"
                 class="primary-button primary-button--icon--close"
             ></button>
-            <a href="/" class="header__logo logo">
+            <a href="/" class="sidebar-header__logo logo">
                 <img
                     src="images/logo.svg"
                     alt="CPS"
@@ -26,11 +26,79 @@
             </a>
             <button
                 type="button"
-                class="primary-button primary-button--icon--search"
+                class="sidebar-header__last-button primary-button primary-button--icon--search-sidebar"
             ></button>
         </div>
     </header>
-
+    <nav class="sidebar-menu__sidebar-navigation sidebar-navigation">
+        <ul class="sidebar-navigation__list">
+            <li class="sidebar-navigation__item">
+                <a href="" class="sidebar-navigation__link">Ремонт техники</a>
+            </li>
+            <li class="sidebar-navigation__item">
+                <a href="" class="sidebar-navigation__link">Услуги и сервисы</a>
+            </li>
+            <li class="sidebar-navigation__item">
+                <a href="" class="sidebar-navigation__link">Корпоративным клиент</a>
+            </li>
+            <li class="sidebar-navigation__item">
+                <a href="" class="sidebar-navigation__link">Продавцам техники</a>
+            </li>
+            <li class="sidebar-navigation__item">
+                <a href="" class="sidebar-navigation__link">Партнерам</a>
+            </li>
+            <li class="sidebar-navigation__item">
+                <a href="" class="sidebar-navigation__link">Производителям</a>
+            </li>
+            <li class="sidebar-navigation__item">
+                <a href="" class="sidebar-navigation__link">Наши сервисные центр</a>
+            </li>
+            <li class="sidebar-navigation__item">
+                <a href="" class="sidebar-navigation__link">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+    <footer class="sidebar-footer">
+        <div class="sidebar-footer__inner">
+            <div class="sidebar-footer__user-menu user-menu">
+                <button class="user-menu__link primary-button primary-button--icon--phone">
+                    <span class="user-menu__text">Позвонить по телефону</span>
+                </button>
+                <button class="user-menu__link primary-button primary-button--icon--message">
+                    <span class="user-menu__text">
+                    написать электронное письмо
+                    </span>
+                </button>
+                <button class="user-menu__link primary-button primary-button--icon--user">
+                    <span class="user-menu__text">
+                    перейти к профилю пользователя
+                    </span>
+                </button>
+            </div>
+            <a class="sidebar-footer__mail-link" href="mailto:mail@cps.com">mail@cps.com</a>
+            <a class="sidebar-footer__mail-phone" href="tel:88008908900">8 800 890 8900</a>
+            <div class="sidebar-footer__lang-block">
+                <button
+                    class="lang-button lang-button--active"
+                    type="button"
+                >
+                    RU
+                </button>
+                <button
+                    class="lang-button"
+                    type="button"
+                >
+                    EN
+                </button>
+                <button
+                    class="lang-button"
+                    type="button"
+                >
+                    CH
+                </button>
+            </div>
+        </div>
+    </footer>
 </aside>
 </body>
 </html>

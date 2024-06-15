@@ -56,6 +56,19 @@
         background-image: url("../images/search_button.svg");
       }
     }
+    &--close{
+      &:after{
+        content: '';
+        background-image: url("../images/icon-close.svg");
+      }
+    }
+
+    &--search-sidebar{
+      &:after{
+        content: '';
+        background-image: url("../images/icon-search-sidebar.svg");
+      }
+    }
   }
 
   @include hover{

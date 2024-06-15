@@ -1,9 +1,5 @@
 .header{
 
-  @include tablet-above{
-    //display: none;
-  }
-
   &__inner{
     background-color: #fff;
     align-items: center;

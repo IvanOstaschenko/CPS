@@ -272,6 +272,14 @@ h1, .h1 {
   content: "";
   background-image: url("../images/search_button.svg");
 }
+.primary-button--icon--close:after {
+  content: "";
+  background-image: url("../images/icon-close.svg");
+}
+.primary-button--icon--search-sidebar:after {
+  content: "";
+  background-image: url("../images/icon-search-sidebar.svg");
+}
 @media (hover: hover) {
   .primary-button:hover:after {
     box-shadow: 0 0 5px 0;

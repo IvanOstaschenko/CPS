@@ -309,6 +309,14 @@ h1, .h1 {
   content: "";
   background-image: url("../images/search_button.svg");
 }
+.primary-button--icon--close:after {
+  content: "";
+  background-image: url("../images/icon-close.svg");
+}
+.primary-button--icon--search-sidebar:after {
+  content: "";
+  background-image: url("../images/icon-search-sidebar.svg");
+}
 @media (hover: hover) {
   .primary-button:hover:after {
     box-shadow: 0 0 5px 0;
@@ -320,6 +328,29 @@ h1, .h1 {
     box-shadow: 0 0 5px 0;
     border: 3px solid;
   }
+}
+
+.sidebar-menu {
+  background: #fff;
+  width: 320px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+}
+
+.sidebar-header {
+  padding: 18px 24px;
+}
+.sidebar-header__inner {
+  display: flex;
+  align-items: center;
+}
+.sidebar-header__logo {
+  margin-left: 16px;
+}
+.sidebar-header__last-button {
+  margin-left: auto;
 }
 
 /*# sourceMappingURL=menu.css.map */
