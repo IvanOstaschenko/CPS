@@ -354,6 +354,9 @@ h1, .h1 {
 .sidebar-menu__sidebar-navigation {
   margin-top: 24px;
 }
+.sidebar-menu__sidebar-footer {
+  margin-top: auto;
+}
 
 .sidebar-header {
   padding: 18px 24px;
@@ -393,6 +396,68 @@ h1, .h1 {
   .sidebar-navigation__link:active {
     color: var(--color-gray-links);
   }
+}
+
+.sidebar-footer__inner {
+  padding: 24px 24px 32px;
+}
+.sidebar-footer__user-menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.sidebar-footer__link {
+  display: block;
+  margin-top: 12px;
+}
+@media (hover: hover) {
+  .sidebar-footer__link:hover {
+    filter: opacity(50%);
+  }
+}
+@media (hover: none) {
+  .sidebar-footer__link:active {
+    filter: opacity(50%);
+  }
+}
+.sidebar-footer__link--size--small {
+  font-weight: var(--font-weight-medium);
+}
+.sidebar-footer__link--size--large {
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+  line-height: 32px;
+}
+.sidebar-footer__lang-block {
+  margin-top: 40px;
+}
+
+.lang-block {
+  align-items: center;
+  display: flex;
+  gap: 7px;
+}
+.lang-block__button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: -0.2px;
+  padding: 0;
+}
+@media (hover: hover) {
+  .lang-block__button:hover {
+    opacity: 0.5;
+  }
+}
+@media (hover: none) {
+  .lang-block__button:active {
+    opacity: 0.5;
+  }
+}
+.lang-block__button--active {
+  color: var(--color-gray-links);
 }
 
 /*# sourceMappingURL=menu.css.map */
