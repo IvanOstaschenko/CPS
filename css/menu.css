@@ -456,7 +456,7 @@ h1, .h1 {
     opacity: 0.5;
   }
 }
-.lang-block__button--active {
+.lang-block__input:checked + .lang-block__text {
   color: var(--color-gray-links);
 }
 

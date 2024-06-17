@@ -75,28 +75,23 @@
                     </span>
                 </button>
             </div>
-            <a class="sidebar-footer__link sidebar-footer__link--size--small" href="mailto:mail@cps.com">mail@cps.com</a>
+            <a class="sidebar-footer__link sidebar-footer__link--size--small"
+               href="mailto:mail@cps.com">mail@cps.com</a>
             <a class="sidebar-footer__link sidebar-footer__link--size--large" href="tel:88008908900">8 800 890 8900</a>
-            <div class="sidebar-footer__lang-block lang-block">
-                <button
-                    class="lang-block__button lang-block__button--active"
-                    type="button"
-                >
-                    RU
-                </button>
-                <button
-                    class="lang-block__button"
-                    type="button"
-                >
-                    EN
-                </button>
-                <button
-                    class="lang-block__button"
-                    type="button"
-                >
-                    CH
-                </button>
-            </div>
+            <form class="sidebar-footer__lang-block lang-block">
+                <label class="lang-block__button lang-block__button--active">
+                    <input class="lang-block__input visually-hidden" type="radio" name="lang" value="ru" checked>
+                        <span class="lang-block__text">RU</span>
+                </label>
+                <label class="lang-block__button">
+                    <input class="lang-block__input visually-hidden" type="radio" name="lang" value="en">
+                        <span class="lang-block__text">EN</span>
+                </label>
+                <label class="lang-block__button">
+                    <input class="lang-block__input visually-hidden" type="radio" name="lang" value="ch">
+                        <span class="lang-block__text">CH</span>
+                </label>
+            </form>
         </div>
     </footer>
 </aside>

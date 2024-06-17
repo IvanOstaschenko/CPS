@@ -15,9 +15,9 @@
     @include hover{
       opacity: .5;
     }
+  }
 
-    &--active{
-      color: var(--color-gray-links);
-    }
+  &__input:checked + .lang-block__text{
+    color: var(--color-gray-links);
   }
 }
