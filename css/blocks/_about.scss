@@ -16,29 +16,17 @@
       padding-inline: 0;
     }
   }
+
   &__button{
-    font-weight: 700;
     margin-left: 16px;
     margin-top: 16px;
-    @include reset-button;
-
-    @include hover{
-      cursor: pointer;
-      color: aqua;
-    }
-
-    &:before{
-      content: url("../images/read-more-arrows.svg");
-      display: inline-block;
-      height: 24px;
-      width: 24px;
-    }
 
     @include mobile-above{
       margin-left: 0;
       margin-top: 10px;
     }
   }
+
   &__image{
     margin-top: 16px;
     height: auto;

@@ -538,30 +538,8 @@ h1, .h1 {
   }
 }
 .about__button {
-  font-weight: 700;
   margin-left: 16px;
   margin-top: 16px;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-}
-@media (hover: hover) {
-  .about__button:hover {
-    cursor: pointer;
-    color: aqua;
-  }
-}
-@media (hover: none) {
-  .about__button:active {
-    cursor: pointer;
-    color: aqua;
-  }
-}
-.about__button:before {
-  content: url("../images/read-more-arrows.svg");
-  display: inline-block;
-  height: 24px;
-  width: 24px;
 }
 @media (min-width: 768px) {
   .about__button {
