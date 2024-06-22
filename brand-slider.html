@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/brand-slider.css">
     <title>OPS 1.5</title>
 </head>
@@ -16,7 +17,8 @@
             <h2 class="section__title">Ремонт техники различных брендов</h2>
         </div>
         <div class="section__body">
-            <ul class="brands">
+            <div>
+            <ul class="brands" id="brandsBlock">
                 <li class="brands__item">
                     <img
                         class="brands__image"
@@ -126,15 +128,19 @@
                     <a class="brands__link secondary-button" href="#"></a>
                 </li>
             </ul>
+            </div>
             <button
                 class="section__read-more-button read-more-button"
                 type="button"
+                id="showMore"
             >
-                Показать все
+                <span class="read-more-button__first-text">Показать все</span>
+                <span class="read-more-button__second-text">Скрыть</span>
             </button>
         </div>
     </div>
 </section>
-
+<script src="swiper/swiper-bundle.min.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

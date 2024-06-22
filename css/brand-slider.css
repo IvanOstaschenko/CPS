@@ -270,6 +270,18 @@ h1, .h1 {
   height: 24px;
   width: 24px;
 }
+.read-more-button__second-text {
+  display: none;
+}
+.read-more-button--show.read-more-button:before {
+  transform: rotate(180deg);
+}
+.read-more-button--show .read-more-button__first-text {
+  display: none;
+}
+.read-more-button--show .read-more-button__second-text {
+  display: inline;
+}
 
 .section__inner {
   border-top: 1px solid var(--color-section-border);
@@ -298,6 +310,7 @@ h1, .h1 {
   row-gap: 16px;
   height: 160px;
   overflow: hidden;
+  transition: 0.5s;
 }
 .brands__item {
   align-items: center;
@@ -309,6 +322,9 @@ h1, .h1 {
   display: flex;
   height: 72px;
   padding-inline: 16px;
+}
+.brands--show {
+  height: 248px;
 }
 
 .secondary-button {

@@ -5,6 +5,7 @@
   row-gap: 16px;
   height: 160px;
   overflow: hidden;
+  transition: .5s;
 
   @include tablet-above{
 
@@ -21,4 +22,8 @@
     height: 72px;
     padding-inline: 16px;
   }
+  &--show{
+    height: 248px;
+  }
 }
+
