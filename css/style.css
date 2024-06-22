@@ -422,7 +422,13 @@ h1, .h1 {
   padding-bottom: 34px;
 }
 .section__read-more-button {
+  display: none;
   margin-top: 24px;
+}
+@media (min-width: 768px) {
+  .section__read-more-button {
+    display: inline-block;
+  }
 }
 
 @media (min-width: 1120px) {

@@ -300,19 +300,56 @@ h1, .h1 {
   padding-bottom: 34px;
 }
 .section__read-more-button {
+  display: none;
   margin-top: 24px;
+}
+@media (min-width: 768px) {
+  .section__read-more-button {
+    display: inline-block;
+  }
 }
 
 .brands {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 32px;
-  row-gap: 16px;
-  height: 160px;
   overflow: hidden;
-  transition: 0.5s;
+  position: relative;
+}
+.brands:after {
+  background: linear-gradient(270deg, #f8f8f8 0.04%, rgba(248, 248, 248, 0) 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media (min-width: 768px) {
+  .brands:after {
+    display: none;
+  }
+}
+.brands__list {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .brands__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    row-gap: 16px;
+    height: 160px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+}
+@media (min-width: 1120px) {
+  .brands__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .brands__item {
+  width: 75vw;
+  flex-shrink: 0;
   align-items: center;
   background: #fff;
   border: 1px solid var(--color-gray-light);
@@ -323,8 +360,21 @@ h1, .h1 {
   height: 72px;
   padding-inline: 16px;
 }
+@media (min-width: 768px) {
+  .brands__item {
+    width: auto;
+  }
+}
 .brands--show {
   height: 248px;
+}
+.brands--margin--right {
+  margin-right: -24px;
+}
+@media (min-width: 768px) {
+  .brands--margin--right {
+    margin-right: 0;
+  }
 }
 
 .secondary-button {
@@ -344,6 +394,29 @@ h1, .h1 {
   .secondary-button:active {
     opacity: 0.5;
   }
+}
+
+.pagination-slider {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  .pagination-slider {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: #ddd;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
 }
 
 /*# sourceMappingURL=brand-slider.css.map */

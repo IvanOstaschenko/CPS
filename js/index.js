@@ -9,7 +9,16 @@ function resizeBrandsBlock(){
     })
 }
 if (windowInnerWidth < 768){
-    new Swiper('.brands');
+    new Swiper('.brands',{
+        slidesPerView: 'auto',
+        wrapperClass: 'brands__list',
+        slideClass: 'brands__item',
+        spaceBetween: 16,
+        pagination: {
+            el: '.pagination-slider',
+            clickable: true,
+        }
+    });
 } else {
     resizeBrandsBlock();
 }
