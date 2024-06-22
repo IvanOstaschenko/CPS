@@ -378,7 +378,7 @@ h1, .h1 {
 }
 
 .secondary-button {
-  background: url("../../images/arrow-right.svg") no-repeat 50% 50%;
+  background: url("../images/arrow-right.svg") no-repeat 50% 50%;
   border-radius: 50%;
   border: 2px solid var(--color-pink);
   box-sizing: border-box;
