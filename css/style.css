@@ -186,6 +186,7 @@ svg * {
   --color-bg-gray: #f8f8f8;
   --color-gray-light: #eaeaea;
   --color-gray-links: #7e7e82;
+  --color-section-border: #D9FFF5;
   --font-family: "TT Lakes", sans-serif;
   --font-weight-regular: 400;
   --font-weight-medium: 700;
@@ -194,6 +195,7 @@ svg * {
   --border: 2px solid var(--color-aqua-light);
   --primary-button-height: 40px;
   --transition-duration: 0.2s;
+  --section-padding-x: 24px;
 }
 
 .visually-hidden {
@@ -211,9 +213,10 @@ svg * {
 
 body {
   font-family: var(--font-family);
-  font-weight: 500;
+  font-weight: var(--font-weight-regular);
   color: var(--color-text);
   background-color: var(--color-bg-gray);
+  letter-spacing: -0.2px;
 }
 
 ::before,
@@ -231,8 +234,12 @@ a {
   color: inherit;
 }
 
-h1, h2, h3, h4 {
-  font-weight: 900;
+h1, h3, h4 {
+  font-weight: var(--font-weight-bold);
+}
+
+h2 {
+  font-weight: var(--font-weight-regular);
 }
 
 h1, .h1 {
@@ -396,6 +403,26 @@ h1, .h1 {
 }
 .services-menu__text {
   font-size: 16px;
+}
+
+.section__inner {
+  border-top: 1px solid var(--color-section-border);
+}
+.section__header {
+  background: linear-gradient(90deg, #f8f8f8 0%, #fff 100%);
+  padding: 16px 0 16px var(--section-padding-x);
+}
+.section__title {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.section__body {
+  padding-inline: var(--section-padding-x);
+  padding-top: 24px;
+  padding-bottom: 34px;
+}
+.section__read-more-button {
+  margin-top: 24px;
 }
 
 @media (min-width: 1120px) {
